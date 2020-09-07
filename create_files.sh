@@ -1,0 +1,12 @@
+#!/bin/bash
+
+TEMPLATE_NAMES=$1 
+COUNT=$2
+SAVEDIR=$3
+TYPE=$4
+
+str=$SAVEDIR/$TEMPLATE_NAMES{1..$COUNT}.$TYPE
+
+
+touch $str 
+
